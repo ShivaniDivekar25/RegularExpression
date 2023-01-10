@@ -11,8 +11,8 @@ namespace RegularExpressionProgram
     {
         public static void validatePinCode()
         {
-            string pattern = "^[0-9]{6}$";
-            string[] arr = { "400088", "A400088","400088B" };
+            string pattern = "^[0-9]{3}[ ]?[0-9]{3}$";
+            string[] arr = { "400088", "A400088","400088B","400 088" };
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)
