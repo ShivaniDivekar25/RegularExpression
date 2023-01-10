@@ -17,8 +17,8 @@ namespace RegularExpressionProgram
         }
         public static void validateEmail()          //Created validate email method
         {
-            string pattern = "^[a-zA-z]{3}.[a-zA-Z]{2,}@[a-zA-Z]{1,10}.[a-zA-Z]{2}";
-            string[] arr = {"abc.xyz@bridgelabz.co"};
+            string pattern = "^[a-zA-z]{3}[.,+,_,-]{1}[a-zA-Z]{2,}@[a-zA-Z]{1,10}.[a-zA-Z]{2}.[a-zA-z]{2}";
+            string[] arr = {"abc_xyz@bridgelabz.co.in"};
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
