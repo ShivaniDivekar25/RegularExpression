@@ -9,13 +9,19 @@ namespace RegularExpressionProgram
 {
     internal class RegularExpression
     {
-        public static void validatePinCode()
+        public static void validatePinCode()            //Created validate pin code method
         {
             string pattern = "^[0-9]{3}[ ]?[0-9]{3}$";
             string[] arr = { "400088", "A400088","400088B","400 088" };
             TestPattern(pattern, arr);
         }
-        public static void TestPattern(string pattern, string[] arr)
+        public static void validateEmail()          //Created validate email method
+        {
+            string pattern = "^[a-zA-z]{3}";
+            string[] arr = {"abc"};
+            TestPattern(pattern, arr);
+        }
+        public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
         {
             foreach (string inputs in arr)
             {
