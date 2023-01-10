@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Regular Expression program");
             Console.WriteLine("Please enter the option given below");               //Taking user input
-            Console.WriteLine("1:Create PIN code\n2:Restrict alphabates at beginning of Pin Code\n3:Restrict alphabates at end of Pin Code\n4:Pin code with spaces\n5:Create Email Id Part 1\n6:Create Email Id Part 2\n7:Create Email Id Part 3\n8:Create Email Id Part 4");
+            Console.WriteLine("1:Create PIN code\n2:Restrict alphabates at beginning of Pin Code\n3:Restrict alphabates at end of Pin Code\n4:Pin code with spaces\n5:Create Email Id Part 1\n6:Create Email Id Part 2\n7:Create Email Id Part 3\n8:Create Email Id Part 4\n9:Create Email Id Part 5");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)             //Create switch case to call different methods
             {
@@ -32,6 +32,9 @@
                     RegularExpression.validateEmail();
                     break;
                 case 8:
+                    RegularExpression.validateEmail();
+                    break;
+                case 9:
                     RegularExpression.validateEmail();
                     break;
                 default:
